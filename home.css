@@ -1,0 +1,30 @@
+.head-container{
+  margin-top: 50px;
+
+}
+.personal-desc {
+  font-size:  16pt;
+}
+
+.about-info {
+  font-weight:  600;
+}
+
+.activity-desc {
+  font-size:  16pt;
+}
+
+.publications {
+  font-size:  14pt;
+
+}
+
+.paper-name{
+  font-size:  16pt;
+  font-weight:  600;
+}
+
+.special{
+  color:  red;
+  font-weight:  600;
+}
