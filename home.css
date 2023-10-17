@@ -19,6 +19,13 @@
 
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
 .paper-name{
   font-size:  16pt;
   font-weight:  600;
@@ -32,4 +39,9 @@
 .left-image{
   max-width: 100%;
   height: auto;
+}
+
+.sdn_words{
+  font-size:  16pt;
+  font-weight:  400;
 }

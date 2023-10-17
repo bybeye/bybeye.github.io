@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1280" id="viewport-meta">
+    <meta name="description" content="Edward Bai Homepage">
+    <meta name="author" content="Edward Bai">
+    <title>Subclass-dominant label noise (SDN)</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="home.css" rel="stylesheet">
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="head-container">
+         <h1>Subclass-dominant label noise (SDN) in real-world datasets</h1>
+         <hr>
+         <span class="sdn_words">This website is dedicated to the research paper titled "Subclass-Dominant Label Noise: A Counterexample for the Success of Early Stopping." Our goal is to enhance understanding and awareness of Subclass-Dominant Label Noise (SDN) and to provide resources for effectively identifying and mitigating the impact of SDN in practical applications. By shedding light on the nuances of SDN, we hope to equip researchers and practitioners with the knowledge and tools necessary to address the challenges posed by this specific type of label noise in various real-world scenarios.</span>
+         <br><br>
+
+        <h2 class="big">What is SDN?</h2><hr>
+        <span class="sdn_words"> Subclass-dominant label noise (SDN) describes a situation where mislabeled examples are predominant in at least one subclass within a dataset. These examples have unique features that set them apart from other samples within the same class.</span>
+         <div class="activity-desc">
+            <img src="images/sdn/sdn_and_random_flip.png" class="center"/>
+         </div> 
+         <span class="center sdn_words"> Figure 1: The images above illustrate the distinction between random flipping label noise and SDN. In the case of random flipping, examples are indiscriminately chosen from the dataset. Conversely, with SDN, the selection of examples is not random; instead, it's confined to specific subclasses. </span>  
+      </div>
+
+      <br><br>
+
+      <div class="container">
+        <h2 class="big">Clothing1M</h2><hr>
+        <div class="activity-desc"><br>
+            <div class="activity-desc">
+                <img src="images/sdn/cloth_0.png" class="center"/>
+            </div>
+            <span class="center sdn_words"> Figure 2: Sleep T-Shirt. The first row displays images from the "T-Shirt" class. The second row showcases those from the "Underwear" class, while the third and fourth rows present images mislabeled as 'Underwear'. For the mislabeled pictures, it's evident that these images depict a type of shirt meant for home use, Sleep T-Shirt. After comparing images in the test set and Chinese label names, we put the correct names in parentheses. </span>  
+            <br>
+
+            <div class="activity-desc">
+                <img src="images/sdn/cloth_7.png" class="center"/>
+            </div>
+            <span class="center sdn_words"> Figure 3: Leather Jacket. The first row images are from the "Jacket" class, and the second row presents images correctly labeled as the "Windbreaker" class (correct name:"trench coat"). Clearly, these mislabeled images belong to the "Leather Jacket" subclass within the "Jacket" category. </span>  
+            <br>
+
+            <div class="activity-desc">
+                <img src="images/sdn/cloth_12.png" class="center"/>
+            </div>
+            <span class="center sdn_words"> Figure 4: Down Vest. The first row displays images from the 'Down coat' class, while the second row showcases those from the 'Vest' class (correct name:'singlet' or 'tank top'). When the 'Vest' class is absent, these mislabeled images should be classified as 'Down Vest' within the 'Down coat' class. </span>  
+
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="container">
+        <h2 class="big">Mini WebVision (First 50 classes)</h2><hr>
+        <div class="activity-desc">
+            <div class="activity-desc">
+                <img src="images/sdn/web_5.png" class="center"/>
+            </div>
+            <span class="center sdn_words"> Figure 5: Explore images categorized under the 'Electric Ray' class. The first row showcases images sourced from the ImageNet validation set, while the second row features images from the WebVision validation set. Correctly labeled training images are in the third row, whereas the fourth and fifth rows illustrate instances of mislabeling in the training set. We can find majority of mislabeled images are in "black and white" pattern, which are close to some examples in the third row, so we call it "black and white" subclass. </span>  
+            <br>
+
+            <div class="activity-desc">
+                <img src="images/sdn/web_6.png" class="center"/>
+            </div>
+            <span class="center sdn_words"> Figure 6: The row structure remains consistent with the previous format. Notably, numerous cars are incorrectly classified in this category, alongside the presence of wheels and ships. The leading attribute contributing to this misclassification is likely the presence of 'curves'. </span>
+            <br>
+
+            <div class="activity-desc">
+                <img src="images/sdn/web_8.png" class="center"/>
+            </div>
+            <span class="center sdn_words"> Figure 7: The row structure remains consistent with the previous format. The mislabeled subclass may derive from color attributes, such as pink or white, which serve as the decisive classification features for the 'hen' category. </span>  
+        </div>
+      </div>
+
+      <br><br>
+
+      <div class="container">
+        <h2 class="big">Share your findings</h2><hr>
+        <div class="activity-desc">
+          <span class="center sdn_words">If you encounter subclass-dominant label noise (SDN) in your datasets and are interested in sharing your findings, please feel free to reach out to me at <a href = "mailto: bybeye@gmail.com">bybeye@gmail.com</a>. I'd be eager to discuss further!</span>
+        </div>
+      </div>
+
+
+      <br><br><br><br><br><br><br><br>
+  </div>
+  </body>
+</html>
